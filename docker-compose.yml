@@ -12,7 +12,7 @@ services:
     ports:
       - $POSTGRESDB_LOCAL_PORT:$POSTGRESDB_DOCKER_PORT
     volumes:
-      - db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql
   app:
     depends_on:
       - postgresdb
